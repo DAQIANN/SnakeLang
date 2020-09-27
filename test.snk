@@ -1,0 +1,26 @@
+def fib(n) {
+    x := 0
+    y := 1
+
+    for (i := 0; i < n; i := i + 1) {
+        x, y := y, x + y
+    }
+
+    return x
+}
+
+def range(n) {
+    for (i := 0; i < n; i := i + 1) {
+        yield i
+    }
+
+    return None
+}
+
+res := fib(10)
+
+s := 0
+for i in range(10) {
+    s := s + i
+}
+
